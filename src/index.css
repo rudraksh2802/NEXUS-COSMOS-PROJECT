@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-brand-100: #e3eefe;
+  --color-brand-200: #c7ddfc;
+  --color-brand-300: #87b5f4;
+  --color-brand-400: #5C99EE;
+  --color-brand-500: #5C99EE;
+  --color-brand-600: #467fd4;
+  --color-brand-700: #3464b2;
+  --color-brand-800: #264c8a;
+  --color-brand-900: #1b3663;
+  --color-brand-950: #10203d;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0d11;
+    color: #f1f5f9;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0e1116;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272e3b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f4a5e;
+}
+
+@media print {
+  @page {
+    margin: 10mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}

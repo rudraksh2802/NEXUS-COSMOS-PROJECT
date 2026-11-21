@@ -1,0 +1,6 @@
+{
+  "name": "TerraSight",
+  "description": "AI-powered satellite and environmental site intelligence workbench for sustainable urban planning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
